@@ -1,0 +1,103 @@
+.custom-select {
+  border: 2px solid $white;
+  height: 54px;
+  border-radius: 0px;
+  line-height: 50px;
+  background: $white;
+  text-align: left;
+  padding: 0 20px;
+  color: $blue;
+  cursor: pointer;
+  border-radius: 3px;
+
+  @media (max-width: 479px) {
+    padding: 0 10px;
+  }
+
+  option {
+    text-transform: none;
+  }
+}
+
+.customSelectInner {
+  @extend .sans-14-medium-uppercase;
+  background: url(../images/icon-select-arrow.svg) no-repeat center right;
+  background-size: 16px 8px;
+}
+
+.input-holder {
+  margin: 10px 0;
+  width: 100%;
+  float: left;
+}
+
+.input-padding {
+  padding: 0 5px;
+  float: left;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  opacity: 0.6;
+  margin-bottom: 3px;
+  padding: 0 5px;
+}
+
+input[type="email"],
+input[type="text"] {
+  @extend .sans-18-medium;
+  height: 54px;
+  padding: 0 20px;
+  line-height: 54px;
+  border-radius: 0px;
+  width: 100%;
+  outline: none;
+  color: $gray2;
+  border-radius: 3px;
+
+  @media (max-width: 479px) {
+    padding: 0 10px;
+  }
+}
+
+textarea {
+  padding: 12px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 168px;
+  width: 100%;
+  color: $gray2;
+}
+
+.input-full {
+  width: 100%;
+
+  input,
+  select {
+    width: 100%;
+  }
+}
+
+.input-half {
+  width: 50%;
+  float: left;
+
+  input,
+  select {
+    width: 100%;
+  }
+}
+
+.form-submit {
+  height: 42px;
+  line-height: 44px;
+  background: $white;
+  border-radius: 4px;
+}
