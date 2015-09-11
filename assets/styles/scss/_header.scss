@@ -2,6 +2,8 @@
   @include clearfix;
   width: 100%;
   margin: 0 0 20px;
+  z-index: 1000;
+  position: relative;
 }
 
 .main-header__main-nav {
@@ -36,7 +38,7 @@
           transition: background 0.1s ease-in-out;
 
   &:hover {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
   }
 }
 
@@ -48,28 +50,4 @@
   text-indent: -999em;
   display: inline-block;
   float: left;
-}
-
-.header-title {
-  @extend .sans-48-bold-uppercase;
-  float: left;
-  text-align: center;
-  width: 100%;
-  padding: 60px 30px;
-  color: $white;
-  position: relative;
-
-  &:after {
-    position: absolute;
-    content: "";
-    background: $orange;
-    height: 5px;
-    width: 40px;
-    left: 50%;
-    bottom: 0px;
-        -ms-transform: translateX(-50%);
-       -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
 }

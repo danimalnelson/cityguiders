@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <meta property="og:title" content="CityGuiders"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://www.cityguiders.com/"/>
+  <meta property="og:url" content="http://www.cityguiders.co/"/>
   <meta property="og:site_name" content="CityGuiders"/>
-  <meta property="og:description" content="Explore a new city with a personal concierge. Let our CityGuiders help you plan where to stay, what to do, and where to eat."/>
+  <meta property="og:description" content="Travel better. Find out where to stay, what to do, and where to eat with a local guide helping plan your trip. For free."/>
   <meta property="og:image" content="" />
 
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../assets/styles/styles.css">
 </head>
 
-<body class="interior-page">
+<body>
   <header class="main-header">
     <nav class="main-header__main-nav">
       <a href="/" class="main-header__logo">GityGuiders</a>
@@ -32,15 +32,52 @@
     </nav>
   </header>
 
+  <div class="city-content">
+    <div class="modal">
+      <form action="http://cityguiders.createsend.com/t/i/s/jthiud/" method="post" id="subForm" class="modal-form">
+        <h2>Milwaukee</h2>
+        <div class="input-holder" style="display:none;">
+          <div class="input-padding">
+            <select id="fieldjyuim" name="cm-fo-jyuim">
+              <option value=""></option>
+              <option data-city="chicago" value="334407">Chicago</option>
+              <option data-city="milwaukee" value="334408">Milwaukee</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-holder">
+          <div class="input-padding">
+            <input id="fieldName" name="cm-name" type="text" placeholder="Your Name" />
+          </div>
+        </div>
+        <div class="input-holder">
+          <div class="input-padding">
+            <input id="fieldEmail" name="cm-jthiud-jthiud" type="email" placeholder="Your Email" required />
+          </div>
+        </div>
+        <div class="input-holder">
+          <div class="input-padding">
+            <textarea id="fieldgwtr" name="cm-f-gwtr" type="text" placeholder="Information about your visit, including trip dates and what our local guides can help you plan for."></textarea>
+          </div>
+        </div>
+        <div class="input-holder">
+          <div class="input-padding">
+            <button type="submit" class="form-submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <video autoplay loop poster="../assets/images/city-milwaukee.jpg" id="milwaukee-video" class="video">
+    <source src="../assets/videos/milwaukee.webm" type="video/webm">
+    <source src="../assets/videos/milwaukee.mp4" type="video/mp4">
+  </video>
+
 <!-- JS -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="assets/scripts/jquery.custom.js"></script>
-<script src="assets/scripts/jquery.customSelect.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-    $('.custom-select').customSelect();
-  });
-</script>
+<script src="../assets/scripts/jquery.custom.js"></script>
+<script src="../assets/scripts/jquery.customSelect.min.js"></script>
 
 </body>
 </html>

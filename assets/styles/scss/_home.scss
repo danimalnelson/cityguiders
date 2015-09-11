@@ -1,8 +1,14 @@
 .hero {
   width: 100%;
+  height: 100%;
   color: $white;
   text-align: center;
-  min-height: 480px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 10px solid $white;
+  background: transparentize($black, 0.2);
+  z-index: 1;
 }
 
 .hero__hero-content {
@@ -13,6 +19,7 @@
   width: 100%;
   height: auto;
   padding: 30px;
+  transition: opacity 0.2s ease-in-out;
       -ms-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -21,9 +28,9 @@
 
 .hero__logo {
   background: url(../images/logo.svg);
-  background-size: 480px 131px;
-  width: 480px;
-  height: 131px;
+  background-size: 420px 115px;
+  width: 420px;
+  height: 115px;
   text-indent: -999em;
   display: inline-block;
 
@@ -37,8 +44,8 @@
 .hero__tagline {
   @extend .sans-18-medium;
   margin: 24px auto 66px;
-  opacity: 0.8;
-  max-width: 400px;
+  opacity: 0.6;
+  max-width: 480px;
 }
 
 .hero__city-select {
@@ -62,7 +69,7 @@
       bottom: -2px;
       width: 100%;
       height: 2px;
-      background: $white;
+      background: $pink;
     }
   }
 }

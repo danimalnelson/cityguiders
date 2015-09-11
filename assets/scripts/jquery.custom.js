@@ -1,20 +1,20 @@
 $(function() {
 
-  // function setHeroHeight() {
-  //   var windowHeight = $(window).height();
-  //   $('.hero').css("height", windowHeight);
-  // }
+  var cityNumber;
+  var selectedCity;
+  var city = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
 
-  $( ".hero__city-select" ).change(function() {
-    var selectedCity = $(this).find(":selected").data("city");
-    window.location.href = "/" + selectedCity;
+  $(".hero__city-select").change(function() {
+    selectedCity = $(this).find(":selected").data("city");
+    window.location = "/" + selectedCity;
   })
 
   $().ready(function() {
-    // setHeroHeight();
-  })
-
-  $(window).resize(function() {
-    // setHeroHeight();
+    if (city === 'milwaukee') {
+      cityNumber = 334408;
+      $("#fieldjyuim").val(cityNumber);
+    } else {
+      return;
+    }
   })
 })
