@@ -1,0 +1,33 @@
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(../images/city-milwaukee.jpg) no-repeat;
+       -o-background-size: cover; 
+      -ms-background-size: cover; 
+     -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+          background-size: cover; 
+       -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+  @media screen and (max-device-width: 840px) {
+    display: none;
+  }
+}
+
+#home-video {
+  background: url(../images/city-milwaukee.jpg) no-repeat;
+}
+
+#milwaukee-video {
+  background: url(../images/city-milwaukee.jpg) no-repeat;
+}
